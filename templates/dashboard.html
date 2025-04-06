@@ -30,9 +30,15 @@
     <link rel="stylesheet" type="text/css"
       href="{{ url_for('static', filename='vendor/swiper/swiper-bundle.min.css') }}">
 
+
     <!-- Main CSS File -->
     <!-- <link href="static/css/main.css" rel="stylesheet"> -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/courses.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/courses_responsive.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/main_styles.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles/responsive.css') }}">
+
 
 
   </head>
@@ -96,177 +102,574 @@
       <img src="{{ url_for('static', filename='img/hero-bg.jpg') }}" alt="" data-aos="fade-in">
 
       <div class="container d-flex flex-column align-items-center">
-        <h2 data-aos="fade-up" data-aos-delay="100">PLAN. LAUNCH. GROW.</h2>
-        <p data-aos="fade-up" data-aos-delay="200">We are team of talented designers making websites with Bootstrap</p>
         <div class="d-flex mt-4" data-aos="fade-up" data-aos-delay="300">
-            <h1 class="sitename mt-5">Welcome, {{ username }}!</h1>
-            <p data-aos="fade-up" data-aos-delay="200">Explore & Join Our Team</p>
+            <h1 class="sitename mt-5" style="color: #fff;">Welcome, {{ username }}!</h1>
         </div>
       </div>
 
-    </section><!-- /Hero Section -->
+    </section>
+    <!-- /Hero Section -->
 
   
+	<!-- Features -->
 
- 
-
-    <!-- Services Section -->
-    <section id="services" class="services section">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>Featured Srvices<br></p>
-      </div><!-- End Section Title -->
-
-      <div class="container" data-aos="fade-up" data-aos-delay="100">
-
-        <div class="row gy-5">
-
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
-            <div class="service-item">
-              <div class="img">
-                <img src="{{ url_for('static', filename='img/services-1.jpg') }}" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-activity"></i>
-                </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Nesciunt Mete</h3>
-                </a>
-                <p>Provident nihil minus qui consequatur non omnis maiores. Eos accusantium minus dolores iure
-                  perferendis.</p>
-              </div>
+	<div class="features mt-5">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<h2 class="section_title">Welcome To Averixis E-Learning</h2>
+						<div class="section_subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida arcu. Vestibulum feugiat, sapien ultrices fermentum congue, quam velit venenatis sem</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="row features_row">
+				
+				<!-- Features Item -->
+				<div class="col-lg-3 feature_col">
+					<div class="feature text-center trans_400">
+						<div class="feature_icon"><img src="{{ url_for('static', filename='img/icon_1.png') }}" alt="">
             </div>
-          </div><!-- End Service Item -->
+						<h3 class="feature_title">The Experts</h3>
+						<div class="feature_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+					</div>
+				</div>
 
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
-            <div class="service-item">
-              <div class="img">
-                <img src="{{ url_for('static', filename='img/services-2.jpg') }}" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-broadcast"></i>
-                </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Eosle Commodi</h3>
-                </a>
-                <p>Ut autem aut autem non a. Sint sint sit facilis nam iusto sint. Libero corrupti neque eum hic non ut
-                  nesciunt dolorem.</p>
-              </div>
+				<!-- Features Item -->
+				<div class="col-lg-3 feature_col">
+					<div class="feature text-center trans_400">
+						<div class="feature_icon"><img src="{{ url_for('static', filename='img/icon_2.png') }}" alt="">
             </div>
-          </div><!-- End Service Item -->
+						<h3 class="feature_title">Book & Library</h3>
+						<div class="feature_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+					</div>
+				</div>
 
-          <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
-            <div class="service-item">
-              <div class="img">
-                <img src="{{ url_for('static', filename='img/services-3.jpg') }}" class="img-fluid" alt="">
-              </div>
-              <div class="details position-relative">
-                <div class="icon">
-                  <i class="bi bi-easel"></i>
-                </div>
-                <a href="service-details.html" class="stretched-link">
-                  <h3>Ledo Markt</h3>
-                </a>
-                <p>Ut excepturi voluptatem nisi sed. Quidem fuga consequatur. Minus ea aut. Vel qui id voluptas adipisci
-                  eos earum corrupti.</p>
-              </div>
+				<!-- Features Item -->
+				<div class="col-lg-3 feature_col">
+					<div class="feature text-center trans_400">
+						<div class="feature_icon"><img src="{{ url_for('static', filename='img/icon_3.png') }}" alt="">
             </div>
-          </div><!-- End Service Item -->
+						<h3 class="feature_title">Best Courses</h3>
+						<div class="feature_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+					</div>
+				</div>
 
-        </div>
-
-      </div>
-
-    </section><!-- /Services Section -->
-
-    <!-- Services 2 Section -->
-    <section id="services-2" class="services-2 section light-background">
-
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Services</h2>
-        <p>CHECK OUR SERVICES</p>
-      </div><!-- End Section Title -->
-
-      <div class="container">
-
-        <div class="row gy-4">
-
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-briefcase icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Lorem Ipsum</a></h4>
-                <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                  occaecati cupiditate non provident</p>
-              </div>
+				<!-- Features Item -->
+				<div class="col-lg-3 feature_col">
+					<div class="feature text-center trans_400">
+						<div class="feature_icon"><img src="{{ url_for('static', filename='img/icon_4.png') }}" alt="">
             </div>
-          </div><!-- End Service Item -->
+						<h3 class="feature_title">Award & Reward</h3>
+						<div class="feature_text"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p></div>
+					</div>
+				</div>
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-card-checklist icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Dolor Sitema</a></h4>
-                <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat tarad limino ata</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+			</div>
+		</div>
+	</div>
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-bar-chart icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Sed ut perspiciatis</a></h4>
-                <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+	<!-- Popular Courses -->
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-binoculars icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Magni Dolores</a></h4>
-                <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
-                  deserunt mollit anim id est laborum</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+	<div class="courses">
+		<div class="section_background parallax-window" data-parallax="scroll" data-image-src="{{ url_for('static', filename='img/courses_background.jpg') }}" data-speed="0.8"></div> 
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="section_title_container text-center">
+						<h2 class="section_title">Popular Online Courses</h2>
+						<div class="section_subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel gravida arcu. Vestibulum feugiat, sapien ultrices fermentum congue, quam velit venenatis sem</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="row courses_row">
+				
+				<!-- Course -->
+				<div class="col-lg-4 course_col">
+					<div class="course">
+						<div class="course_image"><img src="{{ url_for('static', filename='img/course_1.jpg') }}" alt=""></div>
+						<div class="course_body">
+							<h3 class="course_title"><a href="course.html">Software Training</a></h3>
+							<div class="course_teacher">Mr. John Taylor</div>
+							<div class="course_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
+							</div>
+						</div>
+						<div class="course_footer">
+							<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+								<div class="course_info">
+									<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+									<span>20 Student</span>
+								</div>
+								<div class="course_info">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<span>5 Ratings</span>
+								</div>
+								<div class="course_price ml-auto">$130</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-brightness-high icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Nemo Enim</a></h4>
-                <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis
-                  praesentium voluptatum deleniti atque</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+				<!-- Course -->
+				<div class="col-lg-4 course_col">
+					<div class="course">
+						<div class="course_image"><img src="{{ url_for('static', filename='img/course_2.jpg') }}" alt=""></div>
+						<div class="course_body">
+							<h3 class="course_title"><a href="course.html">Developing Mobile Apps</a></h3>
+							<div class="course_teacher">Ms. Lucius</div>
+							<div class="course_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
+							</div>
+						</div>
+						<div class="course_footer">
+							<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+								<div class="course_info">
+									<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+									<span>20 Student</span>
+								</div>
+								<div class="course_info">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<span>5 Ratings</span>
+								</div>
+								<div class="course_price ml-auto">Free</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-          <div class="col-md-6" data-aos="fade-up" data-aos-delay="600">
-            <div class="service-item d-flex position-relative h-100">
-              <i class="bi bi-calendar4-week icon flex-shrink-0"></i>
-              <div>
-                <h4 class="title"><a href="#" class="stretched-link">Eiusmod Tempor</a></h4>
-                <p class="description">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum
-                  soluta nobis est eligendi</p>
-              </div>
-            </div>
-          </div><!-- End Service Item -->
+				<!-- Course -->
+				<div class="col-lg-4 course_col">
+					<div class="course">
+						<div class="course_image"><img src="{{ url_for('static', filename='img/course_3.jpg') }}" alt=""></div>
+						<div class="course_body">
+							<h3 class="course_title"><a href="course.html">Starting a Startup</a></h3>
+							<div class="course_teacher">Mr. Charles</div>
+							<div class="course_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
+							</div>
+						</div>
+						<div class="course_footer">
+							<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+								<div class="course_info">
+									<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+									<span>20 Student</span>
+								</div>
+								<div class="course_info">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<span>5 Ratings</span>
+								</div>
+								<div class="course_price ml-auto"><span>$320</span>$220</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-        </div>
+			</div>
+			<div class="row courses_row">
+				
+				<!-- Course -->
+				<div class="col-lg-4 course_col">
+					<div class="course">
+						<div class="course_image"><img src="{{ url_for('static', filename='img/course_1.jpg') }}" alt=""></div>
+						<div class="course_body">
+							<h3 class="course_title"><a href="course.html">Software Training</a></h3>
+							<div class="course_teacher">Mr. John Taylor</div>
+							<div class="course_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
+							</div>
+						</div>
+						<div class="course_footer">
+							<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+								<div class="course_info">
+									<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+									<span>20 Student</span>
+								</div>
+								<div class="course_info">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<span>5 Ratings</span>
+								</div>
+								<div class="course_price ml-auto">$130</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-      </div>
+				<!-- Course -->
+				<div class="col-lg-4 course_col">
+					<div class="course">
+						<div class="course_image"><img src="{{ url_for('static', filename='img/course_2.jpg') }}" alt=""></div>
+						<div class="course_body">
+							<h3 class="course_title"><a href="course.html">Developing Mobile Apps</a></h3>
+							<div class="course_teacher">Ms. Lucius</div>
+							<div class="course_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
+							</div>
+						</div>
+						<div class="course_footer">
+							<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+								<div class="course_info">
+									<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+									<span>20 Student</span>
+								</div>
+								<div class="course_info">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<span>5 Ratings</span>
+								</div>
+								<div class="course_price ml-auto">Free</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
-    </section><!-- /Services 2 Section -->
+				<!-- Course -->
+				<div class="col-lg-4 course_col">
+					<div class="course">
+						<div class="course_image"><img src="{{ url_for('static', filename='img/course_3.jpg') }}" alt=""></div>
+						<div class="course_body">
+							<h3 class="course_title"><a href="course.html">Starting a Startup</a></h3>
+							<div class="course_teacher">Mr. Charles</div>
+							<div class="course_text">
+								<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
+							</div>
+						</div>
+						<div class="course_footer">
+							<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+								<div class="course_info">
+									<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+									<span>20 Student</span>
+								</div>
+								<div class="course_info">
+									<i class="fa fa-star" aria-hidden="true"></i>
+									<span>5 Ratings</span>
+								</div>
+								<div class="course_price ml-auto"><span>$320</span>$220</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div class="row">
+				<div class="col">
+					<div class="courses_button trans_200"><a href="#">view all courses</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<!-- Courses -->
+
+	<div class="courses">
+		<div class="container">
+			<div class="row">
+
+				<!-- Courses Main Content -->
+				<div class="col-lg-8">
+					<div class="courses_search_container">
+						<form action="#" id="courses_search_form" class="courses_search_form d-flex flex-row align-items-center justify-content-start">
+							<input type="search" class="courses_search_input" placeholder="Search Courses" required="required">
+							<select id="courses_search_select" class="courses_search_select courses_search_input">
+								<option>All Categories</option>
+								<option>Category</option>
+								<option>Category</option>
+								<option>Category</option>
+							</select>
+							<button action="submit" class="courses_search_button ml-auto">search now</button>
+						</form>
+					</div>
+					<div class="courses_container">
+						<div class="row courses_row">
+							
+							<!-- Course -->
+							<div class="col-lg-6 course_col">
+								<div class="course">
+									<div class="course_image"><img src="{{ url_for('static', filename='img/clients/client-1.png') }}" alt=""></div>
+									<div class="course_body">
+										<h3 class="course_title"><a href="course.html">Software Training</a></h3>
+										<div class="course_teacher">Mr. John Taylor</div>
+										<div class="course_text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
+										</div>
+									</div>
+									<div class="course_footer">
+										<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+											<div class="course_info">
+												<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+												<span>20 Student</span>
+											</div>
+											<div class="course_info">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<span>5 Ratings</span>
+											</div>
+											<div class="course_price ml-auto">$130</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Course -->
+							<div class="col-lg-6 course_col">
+								<div class="course">
+									<div class="course_image"><img src="{{ url_for('static', filename='img/clients/client-1.png') }}" alt=""></div>
+									<div class="course_body">
+										<h3 class="course_title"><a href="course.html">Developing Mobile Apps</a></h3>
+										<div class="course_teacher">Ms. Lucius</div>
+										<div class="course_text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
+										</div>
+									</div>
+									<div class="course_footer">
+										<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+											<div class="course_info">
+												<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+												<span>20 Student</span>
+											</div>
+											<div class="course_info">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<span>5 Ratings</span>
+											</div>
+											<div class="course_price ml-auto">Free</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Course -->
+							<div class="col-lg-6 course_col">
+								<div class="course">
+									<div class="course_image"><img src="{{ url_for('static', filename='img/clients/client-1.png') }}" alt=""></div>
+									<div class="course_body">
+										<h3 class="course_title"><a href="course.html">Starting a Startup</a></h3>
+										<div class="course_teacher">Mr. Charles</div>
+										<div class="course_text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
+										</div>
+									</div>
+									<div class="course_footer">
+										<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+											<div class="course_info">
+												<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+												<span>20 Student</span>
+											</div>
+											<div class="course_info">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<span>5 Ratings</span>
+											</div>
+											<div class="course_price ml-auto"><span>$320</span>$220</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Course -->
+							<div class="col-lg-6 course_col">
+								<div class="course">
+									<div class="course_image"><img src="{{ url_for('static', filename='img/clients/client-1.png') }}" alt=""></div>
+									<div class="course_body">
+										<h3 class="course_title"><a href="course.html">Learn Basic German Fast</a></h3>
+										<div class="course_teacher">Mr. John Taylor</div>
+										<div class="course_text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
+										</div>
+									</div>
+									<div class="course_footer">
+										<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+											<div class="course_info">
+												<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+												<span>20 Student</span>
+											</div>
+											<div class="course_info">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<span>5 Ratings</span>
+											</div>
+											<div class="course_price ml-auto">$130</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Course -->
+							<div class="col-lg-6 course_col">
+								<div class="course">
+									<div class="course_image"><img src="{{ url_for('static', filename='img/clients/client-1.png') }}" alt=""></div>
+									<div class="course_body">
+										<h3 class="course_title"><a href="course.html">Business Groud Up</a></h3>
+										<div class="course_teacher">Ms. Lucius</div>
+										<div class="course_text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
+										</div>
+									</div>
+									<div class="course_footer">
+										<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+											<div class="course_info">
+												<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+												<span>20 Student</span>
+											</div>
+											<div class="course_info">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<span>5 Ratings</span>
+											</div>
+											<div class="course_price ml-auto">Free</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- Course -->
+							<div class="col-lg-6 course_col">
+								<div class="course">
+									<div class="course_image"><img src="{{ url_for('static', filename='img/clients/client-1.png') }}" alt=""></div>
+									<div class="course_body">
+										<h3 class="course_title"><a href="course.html">Java Technology</a></h3>
+										<div class="course_teacher">Mr. Charles</div>
+										<div class="course_text">
+											<p>Lorem ipsum dolor sit amet, consectetur adipi elitsed do eiusmod tempor</p>
+										</div>
+									</div>
+									<div class="course_footer">
+										<div class="course_footer_content d-flex flex-row align-items-center justify-content-start">
+											<div class="course_info">
+												<i class="fa fa-graduation-cap" aria-hidden="true"></i>
+												<span>20 Student</span>
+											</div>
+											<div class="course_info">
+												<i class="fa fa-star" aria-hidden="true"></i>
+												<span>5 Ratings</span>
+											</div>
+											<div class="course_price ml-auto"><span>$320</span>$220</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+						</div>
+						<div class="row pagination_row">
+							<div class="col">
+								<div class="pagination_container d-flex flex-row align-items-center justify-content-start">
+									<ul class="pagination_list">
+										<li class="active"><a href="#">1</a></li>
+										<li><a href="#">2</a></li>
+										<li><a href="#">3</a></li>
+										<li><a href="#"><i class="fa fa-angle-right" aria-hidden="true"></i></a></li>
+									</ul>
+									<div class="courses_show_container ml-auto clearfix">
+										<div class="courses_show_text">Showing <span class="courses_showing">1-6</span> of <span class="courses_total">26</span> results:</div>
+										<div class="courses_show_content">
+											<span>Show: </span>
+											<select id="courses_show_select" class="courses_show_select">
+												<option>06</option>
+												<option>12</option>
+												<option>24</option>
+												<option>36</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Courses Sidebar -->
+				<div class="col-lg-4">
+					<div class="sidebar">
+
+						<!-- Categories -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">Categories</div>
+							<div class="sidebar_categories">
+								<ul>
+									<li><a href="#">Art & Design</a></li>
+									<li><a href="#">Business</a></li>
+									<li><a href="#">IT & Software</a></li>
+									<li><a href="#">Languages</a></li>
+									<li><a href="#">Programming</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Latest Course -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">Latest Courses</div>
+							<div class="sidebar_latest">
+
+								<!-- Latest Course -->
+								<div class="latest d-flex flex-row align-items-start justify-content-start">
+									<div class="latest_image"><div><img src="{{ url_for('static', filename='img/clients/client-1.png') }}" alt=""></div></div>
+									<div class="latest_content">
+										<div class="latest_title"><a href="course.html">How to Design a Logo a Beginners Course</a></div>
+										<div class="latest_price">Free</div>
+									</div>
+								</div>
+
+								<!-- Latest Course -->
+								<div class="latest d-flex flex-row align-items-start justify-content-start">
+									<div class="latest_image"><div><img src="{{ url_for('static', filename='img/clients/client-1.png') }}" alt=""></div></div>
+									<div class="latest_content">
+										<div class="latest_title"><a href="course.html">Photography for Beginners Masterclass</a></div>
+										<div class="latest_price">$170</div>
+									</div>
+								</div>
+
+								<!-- Latest Course -->
+								<div class="latest d-flex flex-row align-items-start justify-content-start">
+									<div class="latest_image"><div><img src="{{ url_for('static', filename='img/clients/client-1.png') }}" alt=""></div></div>
+									<div class="latest_content">
+										<div class="latest_title"><a href="course.html">The Secrets of Body Language</a></div>
+										<div class="latest_price">$220</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						
+						<!-- Tags -->
+						<div class="sidebar_section">
+							<div class="sidebar_section_title">Tags</div>
+							<div class="sidebar_tags">
+								<ul class="tags_list">
+									<li><a href="#">creative</a></li>
+									<li><a href="#">unique</a></li>
+									<li><a href="#">photography</a></li>
+									<li><a href="#">ideas</a></li>
+									<li><a href="#">wordpress</a></li>
+									<li><a href="#">startup</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<!-- Banner -->
+						<div class="sidebar_section">
+							<div class="sidebar_banner d-flex flex-column align-items-center justify-content-center text-center">
+								<div class="sidebar_banner_background"></div>
+								<div class="sidebar_banner_overlay"></div>
+								<div class="sidebar_banner_content">
+									<div class="banner_title">Free Book</div>
+									<div class="banner_button"><a href="#">download now</a></div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
